@@ -39,7 +39,6 @@ class RedeemCommand(commands.Cog):
 
         resp = json.loads(resp.text)
         product_id = resp['product']['id']
-        print(product_id)
 
         with open('products.json') as f:
             data = json.load(f)
@@ -61,7 +60,7 @@ class RedeemCommand(commands.Cog):
             return
 
         if role in ctx.author.roles:
-            message = await ctx.send(f'<@{ctx.message.author.id}>, you already have this product\'s role.')
+            message = await ctx.send(f'<@{ctx.message.author.id}>, you already have this products role.')
             await asyncio.sleep(5)
             await message.delete()
             return
@@ -83,12 +82,13 @@ class RedeemCommand(commands.Cog):
                     embed.set_thumbnail(url=ctx.message.author.avatar_url)
                     embed.set_footer(text=f'User ID: {ctx.message.author.id}')
 
-                    embed.add_field(name='**Action**', value='Redeemed a product') 
+                    embed.add_field(name='**User**', value=f'{ctx.message.author.mention}') 
                     embed.add_field(name='**Product ID**', value=key, inline=False)
                     embed.add_field(name='**Role given**', value=role_name, inline=False)
 
                     message = await channel.send(embed=embed)
-            except:
+            except Exception as e:
+                print(e)
                 print('Error sending successful role webhook')
 
             message = await ctx.send(f'<@{ctx.message.author.id}>, your role has been added.')
