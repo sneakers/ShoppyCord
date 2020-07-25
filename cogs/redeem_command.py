@@ -37,6 +37,15 @@ class RedeemCommand(commands.Cog):
             await message.delete()
             return
 
+        json_data = json.loads(resp.text)
+        delivered = json_data['delivered']
+
+        if delivered != 1:
+            message = await ctx.send(f'<@{ctx.message.author.id}>, this product has not been paid for.')
+            await asyncio.sleep(5)
+            await message.delete()
+            return
+
         resp = json.loads(resp.text)
         product_id = resp['product']['id']
 
