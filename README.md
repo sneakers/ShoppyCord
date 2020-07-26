@@ -4,11 +4,17 @@ A Discord bot to give roles based off of Shoppy.gg purchases, specifically made 
 ## Table of contents
 
 [Creating a Discord bot](https://discordpy.readthedocs.io/en/latest/discord.html)
+
 [Installing the files](#installation)
+
 [Getting your Shoppy API key](#Shoppy-API-Key)
+
 [Configuring the bot](#Configuration)
+
 [Adding products](#Adding-products)
+
 [Redeeming products](#Redeeming-products)
+
 [Retrieving all previous products](Retrieving-all-previous-products)
 
 ## Installation
