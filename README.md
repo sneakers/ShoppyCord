@@ -15,7 +15,7 @@ A Discord bot to give roles based off of Shoppy.gg purchases, specifically made 
 
 [Redeeming products](#Redeeming-products)
 
-[Retrieving all previous products](Retrieving-all-previous-products)
+[Retrieving all previous products](#Retrieving-all-previous-products)
 
 ## Installation
 
