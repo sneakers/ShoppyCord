@@ -1,3 +1,6 @@
+this was very rushed, probably doesn't account for a few thins, few people have been asking me 2 release the code tho
+:D
+
 # ShoppyCord
 A Discord bot to give roles based off of Shoppy.gg purchases, specifically made for Counter-Strike cheat configs.
 
