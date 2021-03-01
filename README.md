@@ -1,5 +1,5 @@
-this was very rushed, probably doesn't account for a few thins, few people have been asking me 2 release the code tho
-:D
+this was made for some hvh discords, the readme might not be accurate however the bot does work. 
+please dont contact me for help regarding this project
 
 # ShoppyCord
 A Discord bot to give roles based off of Shoppy.gg purchases, specifically made for Counter-Strike cheat configs.
